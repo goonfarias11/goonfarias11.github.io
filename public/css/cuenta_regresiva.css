@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #020412;
+	color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* ? ----- PORTADA ----- */
+.portada {
+	width: 100%;
+	background: #020412;
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	transition: .5s ease-out all;
+	z-index: 1;
+}
+
+.portada.oculta {
+	transform: translateY(100%);
+}
+
+.portada .header {
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 30px;
+	z-index: 1000;
+}
+
+.header img {
+    width: 300px;
+}
+
+.header i {
+	margin: 10px;
+	background-image: linear-gradient(
+    to right,
+    #102f52,
+    #0b18ca,
+    #0872b9,
+    #5e2bff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 5s infinite alternate-reverse;
+}
+
+@keyframes animatedText {
+  to {
+    background-position: 100%;
+  }
+}
+
+.portada .header .mensaje {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+
+/* ? ----- MAIN ----- */
+main {
+	max-width: 1000px;
+	width: 90%;
+	padding: 60px 0;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+}
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.simply-section {
+	background: #5e2bff;
+	border: 2px solid #fff;
+	width: 150px;
+	height: 150px;
+	margin: 0 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.redes-sociales .btn-red-social {
+	padding: 15px 0;
+	display: inline-block;
+	min-width: 120px;
+	border-radius: 5px;
+	background: #020412;
+	border: 2px solid #fff;
+	box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca,
+    0 0 40px #0ba9ca, 0 0 50px #0ba9ca;
+	color: #fff;
+	font-size: 30px;
+	margin: 0 20px;
+	transition: .3s ease all;
+}
+
+.redes-sociales .btn-red-social:hover {
+	box-shadow: 0px 0px 50px 10px rgba(0,0,0,.15);
+}
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+    position: absolute;
+    bottom: -150;
+    z-index: 10;
+    animation: burbujas 3s linear infinite ;
+	z-index: 10;
+}
+
+.burbuja:nth-child(1){
+    width: 240px;
+    height: 240px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(2){
+    width: 300px;
+    height: 300px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(3){
+    width: 60px;
+    height: 60px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(4){
+    width: 100px;
+    height: 100px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(5){
+    width: 210px;
+    height: 210px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(6){
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(7){
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(8){
+    width: 300px;
+    height: 300px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(9){
+    width: 195px;
+    height: 195px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+	z-index: 10;
+}
+
+.burbuja:nth-child(10){
+    width: 120px;
+    height: 120px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+	z-index: 10;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 727px) {
+    .simply-section{
+        width: 75px;
+        height: 75px;
+        margin: 0 5px;
+    }
+    .simply-amount{
+        font-size: 25px;
+    }
+    .simply-word{
+        font-size: 13px;
+    }
+    .header i {
+        margin: 5px;
+    }
+    .portada .header .mensaje, .header i {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .redes-sociales .btn-red-social {
+        min-width: 90px;
+        margin: 0 5px;
+    }
+    .burbuja:nth-child(1){width: 120px; height: 120px;}
+    .burbuja:nth-child(2){width: 150px; height: 150px;}
+    .burbuja:nth-child(3){width: 50px; height: 50px;}
+    .burbuja:nth-child(4){display: none;}
+    .burbuja:nth-child(5){width: 75px; height: 75px;}
+    .burbuja:nth-child(6){width: 50px; height: 50px;}
+    .burbuja:nth-child(7){width: 50px; height: 50px;}
+    .burbuja:nth-child(8){width: 120px; height: 120px;}
+    .burbuja:nth-child(9){width: 90px; height: 90px;}
+    .burbuja:nth-child(10){width: 60px; height: 60px;}
+}
+@media (min-width: 727px) and (max-width: 998px) {
+    body{
+        overflow-y: hidden;
+    }
+    .simply-section{
+        width: 120px;
+        height: 120px;
+        margin: 0 15px;
+    }
+    .simply-amount{
+        font-size: 35px;
+    }
+    .simply-word{
+        font-size: 21px;
+    }
+    .portada .header .mensaje, .header i {
+        font-size: 22px;
+    }
+
+    .redes-sociales .btn-red-social {
+        min-width: 100px;
+        margin: 0 10px;
+    }
+    .burbuja:nth-child(1){width: 150px; height: 150px;}
+    .burbuja:nth-child(2){width: 180px; height: 180px;}
+    .burbuja:nth-child(3){width: 80px; height: 80px;}
+    .burbuja:nth-child(4){display: none;}
+    .burbuja:nth-child(5){width: 135px; height: 135px;}
+    .burbuja:nth-child(6){width: 80px; height: 80px;}
+    .burbuja:nth-child(7){width: 80px; height: 80px;}
+    .burbuja:nth-child(8){width: 150px; height: 150px;}
+    .burbuja:nth-child(9){width: 120px; height: 120px;}
+    .burbuja:nth-child(10){width: 90px; height: 90px;}
+}
