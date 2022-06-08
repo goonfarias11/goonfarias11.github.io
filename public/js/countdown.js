@@ -6,10 +6,10 @@ simplyCountdown('#cuenta', {
 	minutes: 0, // Default is 0 [0-59] integer
 	seconds: 0, // Default is 0 [0-59] integer
 	words: { //words displayed into the countdown
-		days: 'Days',
-		hours: 'Hours',
-		minutes: 'Minutes',
-		seconds: 'Seconds',
+		days: 'Day',
+		hours: 'Hour',
+		minutes: 'Minute',
+		seconds: 'Second',
 		pluralLetter: 's'
 	},
 	plural: true, //use plurals
