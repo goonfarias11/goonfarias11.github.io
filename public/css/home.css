@@ -1030,7 +1030,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
     border: 0.2rem solid #5e2bff;
     padding: 0.5rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
   
   .about .row .box .progress .bar span {
@@ -1155,7 +1155,7 @@ html::-webkit-scrollbar-thumb {
   
   @media screen and (max-width: 727px) {
     #about {
-      height: 255vh;
+      height: 350vh;
       margin: 3% auto;
     }
     #about h2 {
@@ -1173,7 +1173,7 @@ html::-webkit-scrollbar-thumb {
       font-size: 16px;
     }
     .container img {
-      transform: translateY(102vh);
+      transform: translateY(145vh);
       width: 270px;
     }
     .about .row {
