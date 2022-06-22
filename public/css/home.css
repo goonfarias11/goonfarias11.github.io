@@ -1167,7 +1167,7 @@ html::-webkit-scrollbar-thumb {
   
   @media screen and (max-width: 727px) {
     #about {
-      height: 300vh;
+      height: 330vh;
       margin: 3% auto;
     }
     #about h2 {
@@ -1185,7 +1185,7 @@ html::-webkit-scrollbar-thumb {
       font-size: 16px;
     }
     .container img {
-      transform: translateY(130vh);
+      transform: translateY(160vh);
       width: 270px;
     }
     .about .row {
