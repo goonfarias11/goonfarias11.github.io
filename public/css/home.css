@@ -26,11 +26,23 @@ html::-webkit-scrollbar-thumb {
     overflow-x: hidden;
   }
 
+  .state{
+    height: 20px;
+    background: red;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
   nav {
     width: 100%;
     display: flex;
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 0;
     height: 100px;
     background: #020412;
