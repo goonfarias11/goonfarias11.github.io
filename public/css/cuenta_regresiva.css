@@ -122,8 +122,8 @@ main {
 	border-radius: 5px;
 	background: #020412;
 	border: 2px solid #fff;
-	box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5e2bff, 0 0 30px #5e2bff,
-    0 0 40px #5e2bff, 0 0 50px #5e2bff;
+	box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca,
+    0 0 40px #0ba9ca, 0 0 50px #0ba9ca;
 	color: #fff;
 	font-size: 30px;
 	margin: 0 20px;
