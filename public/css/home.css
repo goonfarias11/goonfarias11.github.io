@@ -232,7 +232,20 @@ html::-webkit-scrollbar-thumb {
   .text-box .contact {
     margin-top: 30px;
     border: 2px solid #5e2bff;
-    background: #020412;
+    background-color: #020412;
+    background-image: linear-gradient(
+        -60deg,
+        transparent, transparent 40%, #ffffff44 40%, #ffffff44 60%,
+        transparent 60%, transparent 100%
+    );
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 150%;
+}
+
+.contact:hover{
+    background-position: -150%;
+    transition: background-position-x 800ms;
   }
   
   .contact a {
@@ -248,22 +261,29 @@ html::-webkit-scrollbar-thumb {
   }
   
   .text-box .btn {
-    background: #0b18ca;
     margin-left: 30px;
     margin-top: 30px;
-    border: none;
-    cursor: pointer;
-  }
+    background-color: #5e2bff;
+    background-image: linear-gradient(
+      -60deg,
+      transparent, transparent 40%, #ffffff44 40%, #ffffff44 60%,
+      transparent 60%, transparent 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  border: none;
+}
+
+.text-box .btn:hover{
+  background-position: -150%;
+  transition: background-position-x 800ms;
+}
   
   .btn a {
     outline: none;
     text-decoration: none;
     color: #fff;
-  }
-  
-  .text-box .btn:hover {
-    box-shadow: 0 0 10px #9b9a9c, 0 0 40px #5e2bff, 0 0 80px #5e2bff;
-    transition: linear .2s;
   }
   
   .img-container {
@@ -688,7 +708,7 @@ html::-webkit-scrollbar-thumb {
     font-size: 30px;
     text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5e2bff, 0 0 30px #5e2bff,
       0 0 40px #5e2bff, 0 0 50px #5e2bff;
-    margin-top: 40px;
+    margin-top: 15px;
   }
   .wrapper {
     width: 85%;
@@ -941,10 +961,11 @@ html::-webkit-scrollbar-thumb {
   
 /* ABOUT  */
   #about {
-    width: 100vw;
-    height: auto;
-    margin: 3% 0px;
+    width: auto;
+    height: 100%;
+    margin: 3%;
     color: #fff;
+    display: flex;
   }
   
   #about h2 {
@@ -952,11 +973,6 @@ html::-webkit-scrollbar-thumb {
     margin: 3% auto 0px;
     background-color: #5e2bff;
     text-align: center;
-  }
-  
-  #about .container {
-    display: flex;
-    justify-content: space-evenly;
   }
   
   .user-img2 img{
@@ -981,7 +997,6 @@ html::-webkit-scrollbar-thumb {
   }
   
   .container .text-container {
-    width: 62%;
     animation: text 1s forwards;
   }
   
@@ -1017,7 +1032,7 @@ html::-webkit-scrollbar-thumb {
   }
   
   .about .row .box {
-    width: 600px;
+    width: 450px;
     background-color: #020412;
     border-radius: 10px;
     padding: 0.5rem 1.5rem;
@@ -1166,25 +1181,21 @@ html::-webkit-scrollbar-thumb {
   }
   
   @media screen and (max-width: 727px) {
-    #about {
-      height: 270vh;
+    #about{
+      flex-wrap: wrap;
     }
     #about h2 {
       width: auto;
       margin: 0px 7%;
     }
-    .container {
-      flex-wrap: wrap;
-    }
     .user-img2 {
-      margin-top: -40px;
+      margin: -40px auto;
     }
     .user-img2 img{
       width: 270px;
     }
-    .container .text-container {
-      width: 85%;
-      height: 660px;
+    .text-container{
+      margin-top: 40px;
     }
     .text-container p {
       font-size: 16px;
@@ -1196,30 +1207,32 @@ html::-webkit-scrollbar-thumb {
       margin-left: 0;
       width: 100%;
     }
+    .about .row .box .title {
+      text-align: center;
+    }
+
   }
   
   /* TABLET */
   @media (min-width: 727px) and (max-width: 998px) {
     #about {
-      height: 350vh;
-      margin: 3% auto;
+      flex-wrap: wrap;
     }
     #about h2 {
       width: auto;
       margin: 0px 7%;
     }
-    .container {
-      flex-wrap: wrap-reverse;
+    .user-img2 {
+      margin: -60px auto;
     }
-    .container .text-container {
-      width: 85%;
-      height: 660px;
+    .user-img2 img{
+      width: 300px;
+    }
+    .text-container {
+      margin-top: 70px;
     }
     .text-container p {
       font-size: 20px;
-    }
-    .container img {
-      transform: translateY(123vh);
     }
     .about .row {
       display: block;
