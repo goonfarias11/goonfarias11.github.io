@@ -1,6 +1,8 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="message.php">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="/public/css/spinner.css">
 <link
       rel="stylesheet"
@@ -31,34 +33,33 @@
     <div class="modal-container">
         <div class="wrapper">
             <header>Send us a Message</header>
-            <form action="">
+            <form action="https://formsubmit.co/gonfarias6@gmail.com" method="post">
                 <div class="dbl-field">
-                    <div class="field">
-                        <input type="text" name="name" placeholder="Enter your name" autocomplete="off">
+                    <div class="field" for="name">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off">
                         <i class="fas fa-user"></i>
                     </div>
-                    <div class="field">
-                        <input type="text" name="email" placeholder="Enter your email" autocomplete="off">
+                    <div class="field" for="email">
+                        <input type="text" id="email" name="email" placeholder="Enter your email" autocomplete="off">
                         <i class="fas fa-envelope"></i>
                     </div>
                 </div>
                 <div class="dbl-field">
-                    <div class="field">
-                        <input type="text" name="phone" placeholder="Enter your phone" autocomplete="off">
+                    <div class="field" for="phone">
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone" autocomplete="off">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <div class="field">
-                        <input type="text" name="website" placeholder="Enter your website" autocomplete="off">
+                    <div class="field" for="website">
+                        <input type="text" id="website" name="website" placeholder="Enter your website" autocomplete="off">
                         <i class="fas fa-globe"></i>
                     </div>
                 </div>
-                <div class="message">
-                    <textarea placeholder="Write your message" name="message"></textarea>
+                <div class="message" for="massage">
+                    <textarea placeholder="Write your message" id="massage" name="massage"></textarea>
                     <i class="material-icons"></i>
                 </div>
                 <div class="button-area">
-                    <button type="submit">Send Message</button>
-                    <span>Sending your message...</span>
+                    <button type="submit" id='submit' class="btn btn-primary">Send Message</button>
                 </div>
             </form>
         </div>
@@ -108,4 +109,32 @@
     });
 </script>
 
-<script src="script.js"></script>
+<script type='text/javascript'>
+     $('form').submit(function(e){
+       var error='';
+
+       if($('#email').val()==""){
+         error +="The email field is required.<br>"
+       }
+       if($('#name').val()==""){
+         error +="The name field is required.<br>"
+       }
+       if($('#phone').val()==""){
+         error +="The phone field is required.<br>"
+       }
+       if($('#massage').val()==""){
+         error +="The content field is required.<br>"
+       }
+       if($('#website').val()==""){
+         error +="The website field is required.<br>"
+       }
+       if(error !=""){
+         $("#error").html('<div class="alert alert-danger"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>')
+         return false;
+       }else{
+         return true;
+       }
+     })
+   
+   
+   </script>
