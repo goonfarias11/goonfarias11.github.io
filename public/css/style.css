@@ -157,7 +157,7 @@ html::-webkit-scrollbar-thumb {
 /* HOME */
   .header {
     width: 100vw;
-    padding-top: 30px;
+    padding-top: 0px;
     display: flex;
     justify-content: space-evenly;
     color: #fff;
