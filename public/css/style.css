@@ -1238,6 +1238,7 @@ html::-webkit-scrollbar-thumb {
 
 /* FOOTER  */
 .footer-dark {
+  background: #020412;
   padding: 50px 7%;
   color: #f0f9ff;
   border-top: 2px solid #fff;
