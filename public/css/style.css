@@ -33,18 +33,6 @@ html::-webkit-scrollbar-thumb {
     z-index: -1;
   }
 
-  .state{
-    height: 20px;
-    background: red;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-  }
-
   nav {
     width: 100%;
     display: flex;
