@@ -7,6 +7,7 @@
     <title>Portafolio Goon</title>
     <link rel="stylesheet" href="/public/css/button.css" />
     <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/spinner.css">
   </head>
   <body>
     <div id="particles-js"></div>
@@ -14,7 +15,14 @@
       <img src="/public/img/logoon.png" alt="" />
       <a href="/views/home.html" class="btn-neon">Start</a>
     </div>
+    <diV class="lds-dual-ring loader" id="loader"></diV>
     <script src="/public/js/particles.min.js"></script>
     <script src="/public/js/app.js"></script>
   </body>
 </html>
+
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("loader").classList.toggle("loader2");
+  });
+</script>
