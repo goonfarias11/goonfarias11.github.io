@@ -1259,6 +1259,7 @@ nav ul li a:hover {
 @media screen and (max-width: 727px) {
   #about {
     flex-wrap: wrap;
+    margin: 7%;
   }
   #about h2 {
     width: auto;
