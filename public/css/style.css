@@ -1270,6 +1270,9 @@ nav ul li a:hover {
   .user-img2 img {
     width: 270px;
   }
+  .text-container{
+    margin-top: 50px;
+  }
   .text-container p {
     font-size: 16px;
   }
