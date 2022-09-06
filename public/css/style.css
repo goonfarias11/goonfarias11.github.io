@@ -289,8 +289,12 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.img-container {
-  -webkit-animation: flicker-in-2 2s linear both;
+.user-img {
+  width: 300px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5e2bff, 0 0 30px #5e2bff,
+    0 0 40px #5e2bff, 0 0 50px #5e2bff;
+      -webkit-animation: flicker-in-2 2s linear both;
   animation: flicker-in-2 2s linear both;
 }
 
@@ -475,20 +479,13 @@ nav ul li a:hover {
   }
   100% {
     opacity: 1;
-    -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
-      0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
-      0 0 100px rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
-      0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
-      0 0 100px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 0 30px #5e2bff, 
+      0 0 60px #5e2bff, 0 0 110px #5e2bff, 
+      0 0 100px #5e2bff;
+    box-shadow: 0 0 30px #5e2bff,
+      0 0 60px #5e2bff, 0 0 110px #5e2bff,
+      0 0 70px #5e2bff;
   }
-}
-
-.user-img {
-  width: 300px;
-  border: 3px solid #fff;
-  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5e2bff, 0 0 30px #5e2bff,
-    0 0 40px #5e2bff, 0 0 50px #5e2bff;
 }
 
 /* PHONE */
@@ -1039,14 +1036,14 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.user-img2 img {
-  width: 350px;
-  margin-top: 70px;
+#about .user-img2 {
+  height: 450px;
   border: 3px solid #fff;
   box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5e2bff, 0 0 30px #5e2bff,
     0 0 40px #5e2bff, 0 0 50px #5e2bff;
-  position: relative;
   animation: img 1s forwards;
+  position: relative;
+  bottom: 30px;
 }
 
 @keyframes img {
@@ -1265,23 +1262,20 @@ nav ul li a:hover {
     width: auto;
     margin: 0px 7%;
   }
-  .user-img2 {
-    margin: -40px auto;
-  }
-  .user-img2 img {
-    width: 270px;
-  }
-  .text-container{
-    margin-top: 50px;
+  #about .user-img2 {
+    margin: 0px auto;
+    bottom: 50px;
   }
   .text-container p {
     font-size: 16px;
   }
   .about .row {
     display: block;
+    margin-top: 25px;
   }
   .about .row .box {
-    margin-left: 0;
+    margin-left: 0px;
+    margin-top: 25px;
     width: 100%;
   }
   .about .row .box .title {
@@ -1293,19 +1287,16 @@ nav ul li a:hover {
 @media (min-width: 727px) and (max-width: 998px) {
   #about {
     flex-wrap: wrap;
+    margin: 7%;
   }
   #about h2 {
     width: auto;
     margin: 0px 7%;
   }
-  .user-img2 {
-    margin: -60px auto;
-  }
-  .user-img2 img {
-    width: 300px;
-  }
-  .text-container {
-    margin-top: 70px;
+  #about .user-img2 {
+    height: 500px;
+    margin: 0px auto;
+    bottom: 50px;
   }
   .text-container p {
     font-size: 20px;
@@ -1394,6 +1385,10 @@ nav ul li a:hover {
   color: #faed27;
   text-shadow: 0 0 80px #faed27, 0 0 80px #faed27;
 }
+.footer-dark .icons .fa-linkedin:hover {
+  color: #39ff14;
+  text-shadow: 0 0 80px #39ff14, 0 0 80px #39ff14;
+}
 
 @media screen and (max-width: 727px) {
   .footer-dark {
@@ -1414,7 +1409,7 @@ nav ul li a:hover {
 
   .footer-dark .icons {
     margin: auto 0px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .footer-dark .icons i {
     margin-left: 5px;
