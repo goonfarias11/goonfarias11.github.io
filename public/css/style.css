@@ -1256,7 +1256,6 @@ nav ul li a:hover {
 @media screen and (max-width: 727px) {
   #about {
     flex-wrap: wrap;
-    margin: 7%;
   }
   #about h2 {
     width: auto;
@@ -1265,6 +1264,9 @@ nav ul li a:hover {
   #about .user-img2 {
     margin: 0px auto;
     bottom: 50px;
+  }
+  .container .text-container{
+    margin: 0px auto;
   }
   .text-container p {
     font-size: 16px;
