@@ -11,8 +11,8 @@
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff #020412 #fff #020412;
+  border: 3px solid #fff;
+  border-color: #f2f2f2 #020412 #f2f2f2 #020412;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -27,7 +27,7 @@
 .loader{
   background: #020412;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +44,9 @@
 }
 
 @media screen and (max-width: 727px) {
+  .loader{
+    height: 100vh;
+  }
   .lds-dual-ring{
     top: -60px;
   }
