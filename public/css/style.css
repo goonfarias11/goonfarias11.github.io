@@ -811,7 +811,7 @@ nav ul li a:hover {
   display: flex;
 }
 
-#about h2 {
+#about .tittle {
   width: 85%;
   margin: 3% auto 0px;
   background: rgba(94, 43, 255, 0.32);
@@ -1043,6 +1043,7 @@ nav ul li a:hover {
 @media screen and (max-width: 727px) {
   #about {
     flex-wrap: wrap;
+    margin: 3% 9%;
   }
   #about h2 {
     width: auto;
@@ -1050,7 +1051,7 @@ nav ul li a:hover {
   }
   #about .user-img2 {
     margin: 0px auto;
-    bottom: 50px;
+    height: 350px;
   }
   .container .text-container{
     margin: 0px auto;
