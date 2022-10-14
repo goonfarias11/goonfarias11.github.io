@@ -11,6 +11,8 @@
 <link rel="icon" type="img/png" href="/public/img/logg.png"/>
 <title>Contact Goon</title>
 
+<body>
+    <div id="particles-js"></div>
 <!-- HEADER SECTION -->
 <nav>
     <div class="logo">
@@ -95,16 +97,18 @@
                 </div>
         </div>
     </footer>
-  </div>
-  
-  <!-- END FOOTER SECTION -->
+</div>
+<!-- END FOOTER SECTION -->
+</body>
 
-  <!-- SPINNER SECTION  -->
+<script src="/public/js/particles.min.js"></script>
+
+<!-- SPINNER SECTION  -->
 <diV class="lds-dual-ring loader" id="loader"></diV>
 <!-- END SPINNER SECTION -->
 
 <script>
     window.addEventListener("load", function () {
-      document.getElementById("loader").classList.toggle("loader2");
+        document.getElementById("loader").classList.toggle("loader2");
     });
 </script>
