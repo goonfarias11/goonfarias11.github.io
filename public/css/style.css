@@ -811,7 +811,7 @@ nav ul li a:hover {
   display: flex;
 }
 
-#about .tittle {
+.title-ab {
   width: 85%;
   margin: 3% auto 0px;
   background: rgba(94, 43, 255, 0.32);
@@ -821,6 +821,7 @@ nav ul li a:hover {
   -webkit-backdrop-filter: blur(5px);
   border: 2px solid rgba(94, 43, 255, 1);
   text-align: center;
+  color: #fff;
 }
 
 #about .user-img2 {
