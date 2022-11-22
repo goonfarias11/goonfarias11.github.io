@@ -131,22 +131,30 @@ nav ul li a:hover {
     padding: 20px 0px;
     position: relative;
     z-index: 10000;
+    position: fixed;
+    top: 0;
   }
   nav .menu-btn i {
     display: block;
     margin-left: 30px;
   }
   nav ul {
-    background: #020412;
+    background: rgba(2, 4, 18, 0.9);
+    box-shadow: 0 4px 30px rgba(2, 4, 18, 0.9);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
     color: #fff;
     position: fixed;
-    top: 80px;
+    top: 78px;
     left: -100%;
     height: auto;
     width: 30%;
     text-align: center;
     display: block;
     transition: all 0.3s ease;
+    border-bottom-right-radius: 30px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
   #click:checked ~ ul {
     left: 0;
