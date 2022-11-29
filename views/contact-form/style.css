@@ -325,6 +325,10 @@ form .button-area {
 
 /* FOOTER  */
 .footer-dark {
+    background: rgba(0, 0, 0, 0.43);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
     padding: 50px 7%;
     color: #f0f9ff;
     border-top: 2px solid #fff;
@@ -392,6 +396,10 @@ form .button-area {
   .footer-dark .icons .fa-github:hover {
     color: #faed27;
     text-shadow: 0 0 80px #faed27, 0 0 80px #faed27;
+  }
+  .footer-dark .icons .fa-linkedin:hover {
+    color: #39ff14;
+    text-shadow: 0 0 80px #39ff14, 0 0 80px #39ff14;
   }
   
   @media screen and (max-width: 727px) {
