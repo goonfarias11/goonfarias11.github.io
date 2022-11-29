@@ -1,6 +1,7 @@
 //getting all required elements
 const gallery  = document.querySelectorAll(".image"),
 previewBox = document.querySelector(".preview-box"),
+descriptionText = previewBox.querySelectorAll(".container-description"),
 previewImg = previewBox.querySelector("img"),
 closeIcon = previewBox.querySelector(".icon"),
 currentImg = previewBox.querySelector(".current-img"),
@@ -18,9 +19,10 @@ window.onload = ()=>{
             function preview(){
                 currentImg.textContent = newIndex + 1; //passing current img index to currentImg varible with adding +1
                 let imageURL = gallery[newIndex].querySelector("img").src; //getting user clicked img url
-                previewImg.src = imageURL; //passing user clicked img url in previewImg src
+                previewImg.src = imageURL;             
             }
             preview(); //calling above function
+
     
             const prevBtn = document.querySelector(".prev");
             const nextBtn = document.querySelector(".next");
@@ -44,14 +46,16 @@ window.onload = ()=>{
                 newIndex++; //increment index
                 if(newIndex >= gallery.length - 1){
                     preview(); 
+                    previewText();
                     nextBtn.style.display = "none";
                 }else{
-                    preview(); 
+                    preview();
+                    previewText(); 
                     prevBtn.style.display = "block";
                 }
             }
             document.querySelector("body").style.overflow = "hidden";
-            previewBox.classList.add("show"); 
+            previewBox.classList.add("show");
             shadow.style.display = "block"; 
             closeIcon.onclick = ()=>{
                 newIndex = clickedImgIndex; //assigning user first clicked img index to newIndex
