@@ -124,7 +124,7 @@ nav ul li a:hover {
   }
   nav {
     height: 50px;
-    justify-content: center;
+    padding: 0px 20px;
     position: relative;
     z-index: 10000;
     position: fixed;
