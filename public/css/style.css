@@ -124,7 +124,7 @@ nav ul li a:hover {
   }
   nav {
     height: 50px;
-    padding: 0px 20px;
+    padding: 0px 30px;
     position: relative;
     z-index: 10000;
     position: fixed;
@@ -195,7 +195,7 @@ nav ul li a:hover {
 /* HOME */
 .header {
   color: #fff;
-  margin: 8% 3% 3% 3%;
+  margin: 3%;
 }
 
 .header .img-container{
@@ -336,6 +336,9 @@ nav ul li a:hover {
 
 /* PHONE */
 @media screen and (max-width: 727px) {
+  .header{
+    margin: 8% 3% 3% 3%;
+  }
   .header img{
     width: 150px;
   }
