@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("http://fonts.cdnfonts.com/css/bank-gothic");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
 html::-webkit-scrollbar {
   width: 0.6rem;
@@ -49,10 +50,12 @@ nav {
 }
 .logo {
   display: flex;
-  font-size: 30px;
+  font-size: 20px;
 }
 .logo i {
-  margin-top: 7px;
+  margin-top: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
   display: flex;
   background-image: linear-gradient(
     to right,
@@ -71,7 +74,7 @@ nav {
 
 .logo h1 {
   color: white;
-  font-family: "Bank Gothic", sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 @keyframes animatedText {
