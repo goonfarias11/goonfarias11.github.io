@@ -120,10 +120,10 @@ nav ul li a:hover {
 /* PHONE */
 @media screen and (max-width: 727px) {
   .logo i {
-    font-size: 25px;
+    font-size: 20px;
   }
   .logo h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   nav {
     height: 50px;
@@ -859,7 +859,7 @@ nav ul li a:hover {
 
 /* ABOUT  */
 #about {
-  width: auto;
+  width: 100%;
   height: 100%;
   color: #fff;
 }
@@ -880,7 +880,7 @@ nav ul li a:hover {
 .about-container{
   display: flex;
   width: auto;
-  margin-left: 3%
+  margin-left: 3%;
 }
 
 figure > .user-img2 {
@@ -963,6 +963,7 @@ figure > .user-img2 {
   -webkit-backdrop-filter: blur(3.5px);
   display: flex;
   overflow: hidden;
+  border: 1px solid #5e2bff;
 }
 .slide-skills {
   height: 100px;
@@ -998,22 +999,36 @@ figure > .user-img2 {
 @media screen and (max-width: 727px) {
   #about {
     flex-wrap: wrap;
-    margin: 3% 9%;
   }
   #about h2 {
     width: auto;
     margin: 0px 7%;
   }
-  #about .user-img2 {
+  figure {
     margin: 0px auto;
+  }
+  figure > .user-img2 {
     height: 350px;
   }
-  .container .text-container{
-    margin: 0px auto;
+  .about-container{
+    width: 100%;
+    margin: 0px;
+    flex-direction: column;
+  }
+  .text-container{
+    height: auto;
+    margin: 0px 15px;
   }
   .text-container p {
     font-size: 16px;
   }
+  .flex-container{
+    margin: 0px;
+  }
+.slider-skills {
+  width: 300px;
+  margin-bottom: 3%;
+}
 }
 
 /* TABLET */
