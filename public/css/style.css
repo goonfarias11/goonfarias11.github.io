@@ -340,7 +340,7 @@ nav ul li a:hover {
 /* PHONE */
 @media screen and (max-width: 727px) {
   .header{
-    margin: 8% 3% 3% 3%;
+    margin: 18% 3% 3% 3%;
   }
   .header img{
     width: 150px;
